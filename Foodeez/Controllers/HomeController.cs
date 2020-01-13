@@ -1,17 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Foodeez.Models;
+using System.Net;
+
+using System.IO;
 
 namespace Foodeez.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        public class JavaScriptSerializer
+        {
+
+        }
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -23,8 +28,15 @@ namespace Foodeez.Controllers
             return View();
         }
 
-        public IActionResult Dashboard()
+        public IActionResult Dashboard(object sender, EventArgs e)
+        { 
+         
+            return View();
+        }
+
+        public IActionResult Dashboard1(object sender, EventArgs e)
         {
+
             return View();
         }
 

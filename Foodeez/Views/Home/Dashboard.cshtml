@@ -1,6 +1,33 @@
 ﻿@{
     ViewData["Title"] = "Home";
 }
-<h1>Popular Eateries</h1>
+<body>
+    <h1>Popular Eateries</h1>
+    <p id="counter"></p>
+    <nav aria-label="...">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <span class="page-link">Previous</span>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item">
+                <a class="page-link" href="">2</a></li>
+            
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
 
-<p>Use this page to detail your site's privacy policy.</p>
+
+    <div><h3 id="root"></h3></div><br />
+
+
+
+
+    <script src="~/js/site.js" asp-append-version="true">getRestaurants();</script>
+    <script>
+        getRestaurants()
+    </script>
+</body>
